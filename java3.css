@@ -1,0 +1,78 @@
+body{
+    background-image: url(2.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1, p, label {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+hr{
+    border-top: 2px solid #000;
+}
+@keyframes move {
+    0% {transform: translate(0px, 0px);}
+    40% {transform: translate(0px, 5px);}
+    60% {transform: translate(0px, 4px);}
+    80% {transform: translate(0px, 2px);}
+    90% {transform: translate(0px, 1px);}
+    100% {transform: translate(0px, 0px);}
+}
+@keyframes left {
+    0% {transform: translate(0px, 0px);}
+    40% {transform: translate(5px, 0px);}
+    60% {transform: translate(4px, 0px);}
+    80% {transform: translate(2px, 0px);}
+    90% {transform: translate(1px, 0px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+@keyframes logo {
+    0% {transform: translate(0px, 0px);}
+    40% {transform: translate(5px, 5px);}
+    60% {transform: translate(4px, 6px);}
+    80% {transform: translate(2px, 7px);}
+    90% {transform: translate(1px, 8px);}
+    100% {transform: translate(0px, 4px);}
+}
+
+
+    div.move {
+    width: 600px;
+    height: auto;
+    background-color: rgba(125, 125, 125, 80%);
+    animation-name: move;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite
+}
+
+div.box {
+    width: 600px;
+    color: aliceblue;
+    background-color: rgba(93, 93, 93, 0.8);
+    animation-name: left;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite
+
+}
+div.logo {
+    width: 257px;
+    height: 65px;
+    background-image: url(OIP.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    animation-name: logo;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite
+}
